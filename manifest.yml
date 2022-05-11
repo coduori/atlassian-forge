@@ -1,0 +1,21 @@
+modules:
+  macro:
+    - key: test-forge-hello-world
+      function: main
+      title: test-forge
+      description: Inserts Hello world!
+  function:
+    - key: main
+      handler: index.run
+
+app:
+  id: ari:cloud:ecosystem::app/f35421d4-f933-4cfc-be3c-985cb08bf29f
+
+permissions:
+  scopes:
+    - read:content-details:confluence
+    - write:issue:jira
+  external:
+    fetch:
+      backend:
+        - "https://oduori.atlassian.net"
